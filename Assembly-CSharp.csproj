@@ -46,9 +46,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Frame\Scripts\Base\AssetBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Base\NPCBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Base\UIBase.cs" />
+     <Compile Include="Assets\Frame\Scripts\Event\AssetEventMsg.cs" />
+     <Compile Include="Assets\Frame\Scripts\Event\UIEventMsg.cs" />
      <Compile Include="Assets\Frame\Scripts\FrameTools.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABLoader.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABManifestLoader.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABRelationManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABResLoader.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IABScenesManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\ILoaderManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\IPathTools.cs" />
+     <Compile Include="Assets\Frame\Scripts\Load\NativeResLoader.cs" />
+     <Compile Include="Assets\Frame\Scripts\Manager\AssetManager.cs" />
      <Compile Include="Assets\Frame\Scripts\Manager\NPCManager.cs" />
      <Compile Include="Assets\Frame\Scripts\Manager\UIManager.cs" />
      <Compile Include="Assets\Frame\Scripts\ManagerBase.cs" />
@@ -57,7 +70,10 @@
      <Compile Include="Assets\Frame\Scripts\MsgCenter.cs" />
      <Compile Include="Assets\Frame\Scripts\Scripts\LoadPanel.cs" />
      <Compile Include="Assets\Frame\Scripts\Scripts\UIBehavior.cs" />
-     <Compile Include="Assets\Frame\Scripts\Scripts\UIEventMsg.cs" />
+     <None Include="Assets\Art\Scenes\Scene1Record.txt" />
+     <None Include="Assets\Art\Scenes\Scene2Record.txt" />
+     <None Include="Assets\StreamingAssets\Windows\Scene2Record.txt" />
+     <None Include="Assets\StreamingAssets\Windows\Scene1Record.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/5.5.1f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

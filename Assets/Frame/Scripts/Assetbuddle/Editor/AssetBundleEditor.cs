@@ -22,7 +22,7 @@ public class AssetBundleEditor : Editor {
     [MenuItem("ITools/BuildAssetBundle")]
     public static void BuildAssetBundle()
     {
-        string outPath = Application.dataPath + "/Assetbundle";
+        string outPath = IPathTools.GetAssetBundlePath();//Application.streamingAssetsPath + "/Assetbundle";
         BuildPipeline.BuildAssetBundles(outPath, 0, EditorUserBuildSettings.activeBuildTarget);
         AssetDatabase.Refresh();
     }
@@ -43,7 +43,36 @@ public class AssetBundleEditor : Editor {
                 SceneOverview(temPath);
             }
         }
+        string outPath = IPathTools.GetAssetBundlePath();
+        CopyRecord(path, outPath);
         AssetDatabase.Refresh();
+    }
+
+    public static void CopyRecord(string srcPath,string disPath)
+    {
+        DirectoryInfo info = new DirectoryInfo(srcPath);
+        if (!info.Exists)
+        {
+            Debug.LogError("记录文件夹不存在");
+            return;
+        }
+        if (!Directory.Exists(disPath))
+        {
+            Directory.CreateDirectory(disPath);
+        }
+        FileSystemInfo[] files = info.GetFileSystemInfos();
+        for (int i = 0; i < files.Length; i++)
+        {
+            FileInfo file=files[i] as FileInfo;
+            if (file != null && file.Extension == ".txt")
+            {
+                string srcFile = srcPath + file.Name;
+                string disFile = disPath + "/" + file.Name;
+                File.Copy(srcFile,disFile,true);
+            }
+
+        }
+
     }
 
     public static void SceneOverview(string scenesPath)

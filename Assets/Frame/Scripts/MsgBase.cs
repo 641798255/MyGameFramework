@@ -26,6 +26,11 @@ public class MsgBase
         return (ManagerId)(id*FrameTools.MsgSpan);
     }
 
+    public MsgBase()
+    {
+        MsgId = 0;
+    }
+
     public MsgBase(ushort msgId)
     {
         MsgId = msgId;

@@ -1,0 +1,3 @@
+NPC scene1/npc.ld
+Test scene1/test.ld
+Scene1 scene1.u3d
