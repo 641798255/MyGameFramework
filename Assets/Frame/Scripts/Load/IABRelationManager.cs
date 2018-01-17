@@ -42,6 +42,7 @@ public class IABRelationManager
         TheBundleName = bundleName;
         _LoaderProgress = progress;
         AssetLoader = new IABLoader(progress, BundleLoadFinish);
+        AssetLoader.SetBundleName(bundleName);
         string bundlePath = IPathTools.GetWWWAssetBundlePath()+"/"+bundleName;
         AssetLoader.LoadRes(bundlePath);
     }

@@ -51,6 +51,7 @@
      <None Include="Assets\Art\Scenes\Scene2Record.txt" />
      <None Include="Assets\StreamingAssets\Windows\Scene2Record.txt" />
      <None Include="Assets\StreamingAssets\Windows\Scene1Record.txt" />
+     <None Include="Assets\StreamingAssets\operate.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/5.5.1f1/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
