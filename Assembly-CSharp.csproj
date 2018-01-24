@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Frame\Scripts\Base\AssetBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Base\NPCBase.cs" />
+     <Compile Include="Assets\Frame\Scripts\Base\NetBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Base\UIBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Event\AssetEventMsg.cs" />
      <Compile Include="Assets\Frame\Scripts\Event\UIEventMsg.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Frame\Scripts\Log\TestConsole.cs" />
      <Compile Include="Assets\Frame\Scripts\Manager\AssetManager.cs" />
      <Compile Include="Assets\Frame\Scripts\Manager\NPCManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\Manager\NetManager.cs" />
      <Compile Include="Assets\Frame\Scripts\Manager\UIManager.cs" />
      <Compile Include="Assets\Frame\Scripts\ManagerBase.cs" />
      <Compile Include="Assets\Frame\Scripts\MonoBase.cs" />
@@ -71,9 +73,16 @@
      <Compile Include="Assets\Frame\Scripts\MsgCenter.cs" />
      <Compile Include="Assets\Frame\Scripts\Scripts\LoadPanel.cs" />
      <Compile Include="Assets\Frame\Scripts\Scripts\UIBehavior.cs" />
-     <Compile Include="Assets\Frame\Scripts\Socket\Client.cs" />
-     <Compile Include="Assets\Frame\Scripts\Socket\Server.cs" />
-     <Compile Include="Assets\Frame\Scripts\Socket\SocketBuffer.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\IProtoBufferTools.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\Client.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\NetMsgBase.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\NetSocket.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\NetWorkToServer.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\Server.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\SocketBuffer.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\TCP\TcpSocket.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\UDP\FrameUdp.cs" />
+     <Compile Include="Assets\Frame\Scripts\Socket\UDP\UdpSocket.cs" />
      <Compile Include="Assets\test.cs" />
      <None Include="Assets\Art\Scenes\Scene1Record.txt" />
      <None Include="Assets\Art\Scenes\Scene2Record.txt" />

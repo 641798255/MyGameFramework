@@ -49,6 +49,7 @@ public class MsgCenter : MonoBehaviour {
             case ManagerId.GameManager:
                 break;
             case ManagerId.UIManager:
+                UIManager.Instance.ProcessEvent(msg);
                 break;
             case ManagerId.AssetManager:
                 break;
