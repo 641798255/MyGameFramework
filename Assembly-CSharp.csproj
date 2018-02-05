@@ -52,6 +52,9 @@
      <Compile Include="Assets\Frame\Scripts\Base\UIBase.cs" />
      <Compile Include="Assets\Frame\Scripts\Event\AssetEventMsg.cs" />
      <Compile Include="Assets\Frame\Scripts\Event\UIEventMsg.cs" />
+     <Compile Include="Assets\Frame\Scripts\FSM\FSMManager.cs" />
+     <Compile Include="Assets\Frame\Scripts\FSM\FSMState.cs" />
+     <Compile Include="Assets\Frame\Scripts\FSM\PlayerFSM.cs" />
      <Compile Include="Assets\Frame\Scripts\FrameTools.cs" />
      <Compile Include="Assets\Frame\Scripts\Load\IABLoader.cs" />
      <Compile Include="Assets\Frame\Scripts\Load\IABManager.cs" />
